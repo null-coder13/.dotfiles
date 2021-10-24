@@ -36,6 +36,8 @@ return require('packer').startup(function()
 
   -- Commenting
   -- https://github.com/terrortylor/nvim-comment
+  -- vim-visual-multi
+  -- use 'mg979/vim-visual-multi'
   
   --Completion / LSP
   use {'neovim/nvim-lspconfig' }
