@@ -69,6 +69,10 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["bufferline.nvim"] = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/bufferline.nvim"
+  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/cmp-buffer"
@@ -141,9 +145,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/vim-rhubarb"
   },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
   ["vim-vsnip"] = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/vim-vsnip"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/vimwiki"
   },
   ["which-key.nvim"] = {
     loaded = true,

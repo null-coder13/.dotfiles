@@ -13,6 +13,8 @@ return require('packer').startup(function()
     'hoob3rt/lualine.nvim',
     requires = {'kyazdani42/nvim-web-devicons', opt = true}
   }
+  -- using packer.nvim
+  use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
   -- Autotag
   use 'windwp/nvim-ts-autotag'
   -- Autopairs
@@ -30,6 +32,7 @@ return require('packer').startup(function()
   use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   -- Quickscope
   use 'unblevable/quick-scope'
+  use 'vimwiki/vimwiki'
 
   -- Commenting
   -- https://github.com/terrortylor/nvim-comment
@@ -42,6 +45,7 @@ return require('packer').startup(function()
   --vsnip
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'tpope/vim-surround'
   
 
 end)
