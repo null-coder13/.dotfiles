@@ -35,4 +35,4 @@ vim.wo.wrap = false
 -- vim.wo.number = true
 vim.wo.relativenumber = true
 vim.wo.signcolumn = "yes"
-vim.bo.swapfile = false
+vim.opt.swapfile = false
