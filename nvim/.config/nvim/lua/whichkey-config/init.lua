@@ -35,7 +35,9 @@ local mappings = {
         e = {'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', "Show line diagnostics"},
 --        q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"}
   },
-  q = "Quickscope toggle"
+  q = "Quickscope toggle",
+  t = "Taskwarrior",
+  w = "Vimwiki"
 }
 local opts = {
   prefix = '<leader>'

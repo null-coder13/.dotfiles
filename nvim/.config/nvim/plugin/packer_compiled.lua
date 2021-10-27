@@ -129,6 +129,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/quick-scope"
   },
+  taskwiki = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/taskwiki"
+  },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/telescope-fzf-native.nvim"
@@ -140,6 +144,10 @@ _G.packer_plugins = {
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/tom/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-markdown"] = {
+    loaded = true,
+    path = "/home/tom/.local/share/nvim/site/pack/packer/start/vim-markdown"
   },
   ["vim-rhubarb"] = {
     loaded = true,

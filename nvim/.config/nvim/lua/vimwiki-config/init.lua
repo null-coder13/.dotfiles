@@ -10,3 +10,6 @@ vim.g.vimwiki_ext2syntax = {
   ['.markdown'] = 'markdown',
   ['.mdown'] = 'markdown',
 }
+vim.g.vimwiki_markdown_link_ext = 1
+vim.g.taskwiki_markup_syntax = 'markdown'
+vim.g.markdown_folding = 1

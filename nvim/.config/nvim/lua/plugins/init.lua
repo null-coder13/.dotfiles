@@ -33,6 +33,8 @@ return require('packer').startup(function()
   -- Quickscope
   use 'unblevable/quick-scope'
   use 'vimwiki/vimwiki'
+  use 'tbabej/taskwiki'
+  use 'plasticboy/vim-markdown'
 
   -- Commenting
   -- https://github.com/terrortylor/nvim-comment
