@@ -50,6 +50,8 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
   use 'tpope/vim-surround'
+  -- Color color codes
+  use 'norcalli/nvim-colorizer.lua'
   
 
 end)
