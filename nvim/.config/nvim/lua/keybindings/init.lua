@@ -25,10 +25,11 @@ map('v', '<', '<gv', {noremap = true, silent = false})
 map('v', '>', '>gv', {noremap = true, silent = false})
 
 -- Visual Block moving text
-map('v', 'J', ":m '>+1<CR>gv=gv", {noremap = true, silent = false})
-map('v', 'K', ":m '<-2<CR>gv=gv", {noremap = true, silent = false})
+map('v', '<A-j>', ":m '>+1<CR>gv=gv", {noremap = true, silent = false})
+map('v', '<A-k>', ":m '<-2<CR>gv=gv", {noremap = true, silent = false})
 
 -- Quickscope
 map('n', '<leader>q', ':QuickScopeToggle<cr>', {noremap = true, silent = false})
 map('x', '<leader>q', ':QuickScopeToggle<cr>', {noremap = true, silent = false})
 
+map('n', "<leader>e", ":Lex 30<cr>", {noremap = true, silent = false})

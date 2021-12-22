@@ -37,15 +37,23 @@ return require('packer').startup(function()
   use 'plasticboy/vim-markdown'
 
   -- Commenting
-  -- https://github.com/terrortylor/nvim-comment
+  use {
+    'numToStr/Comment.nvim',
+    config = function()
+        require('Comment').setup()
+    end
+  }
+
   -- vim-visual-multi
   -- use 'mg979/vim-visual-multi'
   
   --Completion / LSP
+  use {'hrsh7th/nvim-cmp'}
   use {'neovim/nvim-lspconfig' }
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/cmp-buffer'}
-  use {'hrsh7th/nvim-cmp'}
+  use {'hrsh7th/cmp-path'}
+  use {'hrsh7th/cmp-cmdline'}
   --vsnip
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'

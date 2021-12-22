@@ -37,6 +37,7 @@ local mappings = {
   },
   q = "Quickscope toggle",
   t = "Taskwarrior",
+  e = "Explorer",
   w = "Vimwiki"
 }
 local opts = {
