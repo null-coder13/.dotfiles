@@ -50,6 +50,7 @@ return require('packer').startup(function()
   --Completion / LSP
   use {'hrsh7th/nvim-cmp'}
   use {'neovim/nvim-lspconfig' }
+  use "williamboman/nvim-lsp-installer"
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/cmp-buffer'}
   use {'hrsh7th/cmp-path'}
