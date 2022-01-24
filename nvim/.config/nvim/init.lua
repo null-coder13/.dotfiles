@@ -11,5 +11,7 @@ require('telescope-config')
 require('colorizer-config')
 require('lsp')
 require('vimwiki-config')
-vim.g.onedark_style = 'darker'
-require('onedark').setup()
+require('onedark').setup {
+    style = 'darker'
+}
+require('onedark').load()

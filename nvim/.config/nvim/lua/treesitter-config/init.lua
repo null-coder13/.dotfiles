@@ -11,14 +11,20 @@ vim.lsp.handlers['textDocument/publishDiagnostics'] = vim.lsp.with(
 )
 require'nvim-treesitter.configs'.setup {
   ensure_installed = "maintained",
+  sync_install = false,
   highlight = {
-    enable = false,      
+    enable = true,      
+    disable = {"html", "css"},
     additional_vim_regex_highlighting = false,
   },
+  indent = { enable = true, disable = {""}},
   autotag = { -- need more stuff for lsp
     enable = true,
   },
   autopairs = {
     enable = true
-  }
+  },
+  context_commentstring = {
+    enable = true
+  },
 }

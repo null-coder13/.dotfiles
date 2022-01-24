@@ -7,6 +7,7 @@ local mappings = {
     g = {"<cmd>Telescope live_grep<cr>", "Grep"},
     b = {"<cmd>Telescope buffers<cr>", "Buffers"},
     h = {"<cmd>Telescope help_tags<cr>", "Help Tags"},
+    m = {"<cmd>Telescope media_files<cr>", "Media Files"}
   },
   g = {
     name = "+git",
@@ -34,11 +35,16 @@ local mappings = {
         a = {'<cmd>lua vim.lsp.buf.code_action()<CR>', "Code actions"},
         e = {'<cmd>lua vim.lsp.diagnostic.show_line_diagnostics()<CR>', "Show line diagnostics"},
 --        q = {'<cmd>lua vim.lsp.diagnostic.set_loclist()<CR>', "Show loclist"}
+        f = {':Format<CR>', "Format"}
   },
   q = "Quickscope toggle",
   t = "Taskwarrior",
   e = "Explorer",
-  w = "Vimwiki"
+  w = "Vimwiki",
+  b = {
+    name = "Buffer",
+    d = {":bdelete<cr>", "Delete"},
+  },
 }
 local opts = {
   prefix = '<leader>'
