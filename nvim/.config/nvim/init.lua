@@ -11,6 +11,7 @@ require('telescope-config')
 require('colorizer-config')
 require('lsp')
 require('vimwiki-config')
+require('gitsigns-config')
 require('onedark').setup {
     style = 'darker'
 }
