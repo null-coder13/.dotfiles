@@ -70,6 +70,9 @@ return require('packer').startup(function()
   use 'tpope/vim-surround'
   -- Color color codes
   use 'norcalli/nvim-colorizer.lua'
+
+  --NvimTree
+  use 'kyazdani42/nvim-tree.lua'
   
 
 end)

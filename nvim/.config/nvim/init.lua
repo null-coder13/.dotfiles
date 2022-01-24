@@ -12,6 +12,7 @@ require('colorizer-config')
 require('lsp')
 require('vimwiki-config')
 require('gitsigns-config')
+require('nvim-tree-config')
 require('onedark').setup {
     style = 'darker'
 }

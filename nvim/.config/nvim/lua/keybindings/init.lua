@@ -32,4 +32,4 @@ map('v', '<A-k>', ":m '<-2<CR>gv=gv", {noremap = true, silent = false})
 map('n', '<leader>q', ':QuickScopeToggle<cr>', {noremap = true, silent = false})
 map('x', '<leader>q', ':QuickScopeToggle<cr>', {noremap = true, silent = false})
 
-map('n', "<leader>e", ":Lex 30<cr>", {noremap = true, silent = false})
+map('n', "<leader>e", ":NvimTreeToggle<cr>", {noremap = true, silent = false})
