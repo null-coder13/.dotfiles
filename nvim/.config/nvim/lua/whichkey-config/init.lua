@@ -45,6 +45,12 @@ local mappings = {
     name = "Buffer",
     d = {":bdelete<cr>", "Delete"},
   },
+  d = {
+    name = "Diagnostics",
+    n = "Next",
+    p = "Previous",
+    l = "List All",
+  },
 }
 local opts = {
   prefix = '<leader>'
