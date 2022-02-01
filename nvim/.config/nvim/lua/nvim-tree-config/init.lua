@@ -74,4 +74,8 @@ nvim_tree.setup {
     folder_arrows = 1,
     tree_width = 30,
   },
+  filters = {
+    dotfiles = false,
+    custom = {},
+  },
 }
