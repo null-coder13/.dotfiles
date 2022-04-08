@@ -8,7 +8,7 @@ if not config_status_ok then
   return
 end
 
-vim.cmd[[let g:nvim_tree_quit_on_open = 1]]
+-- vim.cmd[[let g:nvim_tree_quit_on_open = 1]]
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
@@ -21,7 +21,7 @@ nvim_tree.setup {
     "dashboard",
     "alpha",
   },
-  auto_close = false,
+  auto_close = true,
   open_on_tab = false,
   hijack_cursor = false,
   update_cwd = true,
@@ -65,7 +65,11 @@ nvim_tree.setup {
     number = false,
     relativenumber = false,
   },
-  quit_on_open = 1,
+  actions = {
+    open_file = {
+      quit_on_open = 1,
+    },
+  },
   git_hl = 1,
   disable_window_picker = 0,
   root_folder_modifier = ":t",

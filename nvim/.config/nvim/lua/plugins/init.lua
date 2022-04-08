@@ -26,8 +26,8 @@ return require('packer').startup(function()
   use {"folke/which-key.nvim"}
  
   -- Git
-  -- use 'tpope/vim-fugitive'
-  -- use 'tpope/vim-rhubarb'
+  use 'tpope/vim-fugitive'
+  use 'tpope/vim-rhubarb'
   use 'lewis6991/gitsigns.nvim'
 
   -- Telescope
