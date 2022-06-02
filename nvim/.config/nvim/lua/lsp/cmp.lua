@@ -55,7 +55,7 @@ cmp.setup({
     { name = 'buffer' },
     { name = 'path' }, 
   },
-  documentation = true,
+--  window.documentation = "native",
 })
 
 
