@@ -1,13 +1,14 @@
 local wk = require("which-key")
 local mappings = {
-  f = {
-    name = "+file",
+  s = {
+    name = "+search",
     f = {"<cmd>Telescope find_files<cr>", "Find file"},
     r = {"<cmd>Telescope oldfiles<cr>", "Open Recent File"},
     g = {"<cmd>Telescope live_grep<cr>", "Grep"},
     b = {"<cmd>Telescope buffers<cr>", "Buffers"},
     h = {"<cmd>Telescope help_tags<cr>", "Help Tags"},
-    m = {"<cmd>Telescope media_files<cr>", "Media Files"}
+    m = {"<cmd>Telescope media_files<cr>", "Media Files"},
+    d = {"<cmd>Telescope diagnostics<cr>", "Diagnostics"}
   },
   g = {
     name = "+git",
@@ -17,7 +18,7 @@ local mappings = {
     l = {":G pull<cr>", "pull"},
     b = {":G branch<cr>", "branch"},
     w = {":GBrowse<cr>", "Go to Github"},
-    m = {":G mergetool<cr>", "mergetool"},
+    d = {":G mergetool<cr>", "mergetool"},
     m = {":G difftool<cr>", "difftool"},
   },
   c = {
@@ -41,16 +42,16 @@ local mappings = {
   t = "Taskwarrior",
   e = "Explorer",
   w = "Vimwiki",
-  b = {
-    name = "Buffer",
-    d = {":bdelete<cr>", "Delete"},
-  },
+  x = "Close Buffer",
   d = {
-    name = "Diagnostics",
+    name = "Diagnostics/Debug",
     n = "Next",
     p = "Previous",
     l = "List All",
+    t = "Terminate debug"
   },
+  b = "Toggle breakpoint",
+  B = "Breakpoint condition"
 }
 local opts = {
   prefix = '<leader>'

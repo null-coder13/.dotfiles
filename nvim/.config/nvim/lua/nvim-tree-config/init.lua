@@ -8,9 +8,9 @@ if not config_status_ok then
   return
 end
 
--- vim.cmd[[let g:nvim_tree_quit_on_open = 1]]
 
 local tree_cb = nvim_tree_config.nvim_tree_callback
+
 
 nvim_tree.setup {
   disable_netrw = true,
@@ -43,9 +43,44 @@ nvim_tree.setup {
     ignore = true,
     timeout = 500,
   },
+  renderer = {
+
+    icons = {
+        webdev_colors = true,
+        show = {
+            file = true,
+            folder = true,
+            folder_arrow = true,
+            git = true
+        },
+          glyphs = {
+            default = "",
+            symlink = "",
+            bookmark = "",
+            folder = {
+              arrow_closed = "",
+              arrow_open = "",
+              default = "",
+              open = "",
+              empty = "",
+              empty_open = "",
+              symlink = "",
+              symlink_open = "",
+            },
+            git = {
+              unstaged = "✗",
+              staged = "✓",
+              unmerged = "",
+              renamed = "➜",
+              untracked = "★",
+              deleted = "",
+              ignored = "◌",
+            },
+
+        }
+    },
+    },
   view = {
-    width = 30,
-    height = 30,
     hide_root_folder = false,
     side = "left",
     mappings = {

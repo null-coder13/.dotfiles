@@ -13,6 +13,10 @@ require('lsp')
 require('vimwiki-config')
 require('gitsigns-config')
 require('nvim-tree-config')
+require('nvim-debug')
+require('dap-ui')
+require('web-devicons')
+
 require('onedark').setup {
     style = 'darker'
 }

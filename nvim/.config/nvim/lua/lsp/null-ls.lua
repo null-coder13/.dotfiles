@@ -12,5 +12,7 @@ null_ls.setup({
     formatting.prettier.with {},
     formatting.black.with { extra_args = { "--fast" } },
     diagnostics.flake8,
+    formatting.stylua,
+    formatting.csharpier,
   },
 })

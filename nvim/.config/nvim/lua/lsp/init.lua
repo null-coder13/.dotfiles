@@ -1,6 +1,4 @@
 require('lsp/cmp')
--- require('lsp/diagnostic_signs')
--- require('lsp/language_servers')
-require('lsp/lsp-installer')
+require('lsp/lsp_config')
 require('lsp/handlers').setup()
 require('lsp/null-ls')

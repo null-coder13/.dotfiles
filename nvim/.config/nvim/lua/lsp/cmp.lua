@@ -11,16 +11,23 @@ end
 
 local cmp = require'cmp'
 
+require("luasnip.loaders.from_vscode").lazy_load()
+
 cmp.setup({
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+    { name = 'luasnip' },
+  }, {
+    { name = 'buffer' },
+  }),
   snippet = {
     expand = function(args)
-      -- For `vsnip` user.
-      vim.fn["vsnip#anonymous"](args.body)
+      require('luasnip').lsp_expand(args.body)
     end,
   },
   mapping = {
-    ['<C-k'] = cmp.mapping.select_prev_item(),
-    ['<C-j'] = cmp.mapping.select_next_item(),
+    ['<C-k>'] = cmp.mapping.select_prev_item(),
+    ['<C-j>'] = cmp.mapping.select_next_item(),
     ['<C-d>'] = cmp.mapping.scroll_docs(-4),
     ['<C-f>'] = cmp.mapping.scroll_docs(4),
     ['<C-Space>'] = cmp.mapping.complete(),
@@ -32,8 +39,8 @@ cmp.setup({
     ["<Tab>"] = cmp.mapping(function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
-      elseif vim.fn["vsnip#available"]() == 1 then
-        feedkey("<Plug>(vsnip-expand-or-jump)", "")
+      -- elseif luasnip.expand_or_jumpable() then
+      --       luasnip.expand_or_jump()
       elseif has_words_before() then
         cmp.complete()
       else
@@ -44,18 +51,11 @@ cmp.setup({
     ["<S-Tab>"] = cmp.mapping(function()
       if cmp.visible() then
         cmp.select_prev_item()
-      elseif vim.fn["vsnip#jumpable"](-1) == 1 then
-        feedkey("<Plug>(vsnip-jump-prev)", "")
+      -- elseif luasnip.jumpable(-1) then
+      --   luasnip.jump(-1)
       end
     end, { "i", "s" }),
   },
-  sources = {
-    { name = 'nvim_lsp' },
-    { name = 'vsnip' },
-    { name = 'buffer' },
-    { name = 'path' }, 
-  },
 --  window.documentation = "native",
 })
-
 

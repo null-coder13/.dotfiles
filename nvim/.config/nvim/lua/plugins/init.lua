@@ -11,13 +11,14 @@ return require('packer').startup(function()
     'nvim-treesitter/nvim-treesitter',
     run = ':TSUpdate'
   }
+  use 'nvim-tree/nvim-web-devicons'
   -- Lualine
   use {
     'hoob3rt/lualine.nvim',
-    requires = {'kyazdani42/nvim-web-devicons', opt = true}
+    requires = {'nvim-tree/nvim-web-devicons', opt = true}
   }
   -- using packer.nvim
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'nvim-tree/nvim-web-devicons'}
   -- Autotag
   use 'windwp/nvim-ts-autotag'
   -- Autopairs
@@ -37,8 +38,8 @@ return require('packer').startup(function()
 
   -- Quickscope
   use 'unblevable/quick-scope'
-  use 'vimwiki/vimwiki'
-  use 'tbabej/taskwiki'
+  -- use 'vimwiki/vimwiki'
+  -- use 'tbabej/taskwiki'
   use 'plasticboy/vim-markdown'
 
   -- Commenting
@@ -55,8 +56,11 @@ return require('packer').startup(function()
   
   --Completion / LSP
   use {'hrsh7th/nvim-cmp'}
-  use {'neovim/nvim-lspconfig' }
-  use "williamboman/nvim-lsp-installer"
+  use {
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig",
+  }
   use {'hrsh7th/cmp-nvim-lsp'}
   use {'hrsh7th/cmp-buffer'}
   use {'hrsh7th/cmp-path'}
@@ -64,15 +68,29 @@ return require('packer').startup(function()
   use 'jose-elias-alvarez/null-ls.nvim'
 
   --vsnip
-  use 'hrsh7th/cmp-vsnip'
-  use 'hrsh7th/vim-vsnip'
-  use 'hrsh7th/vim-vsnip-integ'
+  -- use 'hrsh7th/cmp-vsnip'
+  -- use 'hrsh7th/vim-vsnip'
+  -- use 'hrsh7th/vim-vsnip-integ'
+  use ({"L3MON4D3/LuaSnip", tag = "v<CurrentMajor>.*"})
+  use { 'saadparwaiz1/cmp_luasnip' }
+  use "rafamadriz/friendly-snippets"
+
   use 'tpope/vim-surround'
   -- Color color codes
   use 'norcalli/nvim-colorizer.lua'
 
   --NvimTree
-  use 'kyazdani42/nvim-tree.lua'
+  -- use 'kyazdani42/nvim-tree.lua'
+  use {
+    'nvim-tree/nvim-tree.lua',
+    requires = {
+      'nvim-tree/nvim-web-devicons', -- optional, for file icons
+    },
+  }
+  --nvim-dap
+  use 'mfussenegger/nvim-dap'
+  use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+  use 'theHamsta/nvim-dap-virtual-text'
   
 
 end)
