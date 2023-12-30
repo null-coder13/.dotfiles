@@ -1,0 +1,33 @@
+{
+    "workspace.library": [
+        "/home/tom/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/usr/local/share/nvim/runtime/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-lspconfig/lua",
+        "/home/tom/.local/share/nvim/lazy/lualine.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/lazy.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/cmp-nvim-lsp/lua",
+        "/home/tom/.local/share/nvim/lazy/neodev.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/gitsigns.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/which-key.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/Comment.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/telescope.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-web-devicons/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-cmp/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-treesitter/lua",
+        "/home/tom/.local/share/nvim/lazy/bufferline.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/gruvbox.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-surround/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-ts-autotag/lua",
+        "/home/tom/.local/share/nvim/lazy/LuaSnip/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-tree.lua/lua",
+        "/home/tom/.local/share/nvim/lazy/plenary.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/mason.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/telescope-fzf-native.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/cmp_luasnip/lua",
+        "/home/tom/.local/share/nvim/lazy/nvim-autopairs/lua",
+        "/home/tom/.local/share/nvim/lazy/mason-lspconfig.nvim/lua",
+        "/home/tom/.local/share/nvim/lazy/telescope-media-files.nvim/lua",
+        "/home/tom/.dotfiles/nvim/.config/nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}

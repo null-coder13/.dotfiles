@@ -1,16 +1,26 @@
 require('nvim-treesitter.configs').setup {
     ensure_installed = { 'c', 'query', 'vim', 'vimdoc', 'lua', 'html', 'css', 'json', 'typescript', 'rust' },
 
-    auto_install = false,
+    auto_install = true,
 
-    highlight = { enable = true, disable= { "html", "css" } },
+    highlight = { enable = true, disable = { "html", "css" } },
 
     indent = { enable = true },
 
     autopairs = {
-      enable = true
+        enable = true
     },
     autotag = {
-      enable = true,
+        enable = true,
+    },
+
+    incremental_selection = {
+        enable = true,
+        keymaps = {
+            init_selection = '<c-space>',
+            node_incremental = '<c-space>',
+            scope_incremental = '<c-s>',
+            node_decremental = '<c-backspace>',
+        },
     },
 }
